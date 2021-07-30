@@ -9,23 +9,8 @@ import PizzaSelection from './components/pizza-selection/pizza-selection.compone
 import PaymentInfo from './components/payment-info/payment-info.component'
 import OrderSummary from './components/order-summary/order-summary.component'
 
-// import { setCurrentCustomerInfo } from './redux/order/order.actions'
-
 class App extends React.Component {
-  constructor() {
-    super()
-
-    this.state = {
-      summaryItems: []
-    }
-  }
   
-  // componentDidMount() {
-  //   const { setCurrentCustomerInfo } = this.props
-
-  //   setCurrentCustomerInfo({})
-  // }
-
   render() {
     return (
       <div className="App">
@@ -45,10 +30,4 @@ class App extends React.Component {
   }
 }
 
-
-// const mapDispatchToProps = dispatch => ({
-//   setCurrentCustomerInfo: customerInfo => dispatch(setCurrentCustomerInfo(customerInfo))
-// })
-
-// export default connect(null, mapDispatchToProps)(App)
 export default App
